@@ -1,1 +1,101 @@
+/* Estilizando a fonte e cor de fundo do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Estilizando o título principal da página */
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilizando a lista de links do menu */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Estilizando cada item da lista de links do menu */
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Estilizando os links da lista de links do menu */
+a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+/* Estilizando os links quando passa o mouse por cima */
+a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilizando a tabela de informações de animais */
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+/* Estilizando o cabeçalho da tabela */
+th {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Estilizando as células da tabela */
+td {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+/* Estilizando a imagem da universidade */
+img {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Estilizando o título do formulário */
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilizando o label e a caixa de texto do formulário */
+label, input[type="text"] {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilizando o botão de busca do formulário */
+button[type="submit"] {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilizando o botão de busca quando passa o mouse por cima */
+button[type="submit"]:hover {
+  background-color: #666;
+}
 
