@@ -1,39 +1,52 @@
+<!-- Início do documento HTML -->
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<title>Animais - Formulário</title>
 </head>
 <body>
+	<!-- Título principal da página -->
 	<h1>Animais - Formulário</h1>
-	<form action="/submit-form.php" method="post">
-		<label for="nome">Nome:</label>
-		<input type="text" id="nome" name="nome" required><br>
+<!-- Formulário com método POST para enviar os dados para a página /submit-form.php -->
+<form action="/submit-form.php" method="post">
 
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" required><br>
+	<!-- Campo do formulário para o nome com rótulo associado e requerido -->
+	<label for="nome">Nome:</label>
+	<input type="text" id="nome" name="nome" required><br>
 
-		<label for="animais">Selecione um animal:</label>
-		<select id="animais" name="animais">
-			<option value="cachorro">Cachorro</option>
-			<option value="gato">Gato</option>
-			<option value="tartaruga">Tartaruga</option>
-			<option value="papagaio">Papagaio</option>
-			<option value="girafa">Girafa</option>
-			<option value="tigre">Tigre</option>
-		</select><br>
+	<!-- Campo do formulário para o email com rótulo associado e requerido -->
+	<label for="email">Email:</label>
+	<input type="email" id="email" name="email" required><br>
 
-		<label for="pergunta">Qual é o seu animal favorito?</label>
-		<input type="radio" id="cachorro" name="pergunta" value="cachorro">
-		<label for="cachorro">Cachorro</label>
-		<input type="radio" id="gato" name="pergunta" value="gato">
-		<label for="gato">Gato</label>
-		<input type="radio" id="outro" name="pergunta" value="outro">
-		<label for="outro">Outro</label><br>
+	<!-- Campo do formulário para selecionar um animal com rótulo associado -->
+	<label for="animais">Selecione um animal:</label>
+	<select id="animais" name="animais">
+		<option value="cachorro">Cachorro</option>
+		<option value="gato">Gato</option>
+		<option value="tartaruga">Tartaruga</option>
+		<option value="papagaio">Papagaio</option>
+		<option value="girafa">Girafa</option>
+		<option value="tigre">Tigre</option>
+	</select><br>
 
-		<label for="mensagem">Mensagem:</label><br>
-		<textarea id="mensagem" name="mensagem" rows="5" cols="30"></textarea><br>
+	<!-- Campo do formulário para perguntar sobre o animal favorito com rótulo associado e opções de rádio -->
+	<label for="pergunta">Qual é o seu animal favorito?</label>
+	<input type="radio" id="cachorro" name="pergunta" value="cachorro">
+	<label for="cachorro">Cachorro</label>
+	<input type="radio" id="gato" name="pergunta" value="gato">
+	<label for="gato">Gato</label>
+	<input type="radio" id="outro" name="pergunta" value="outro">
+	<label for="outro">Outro</label><br>
 
-		<input type="submit" value="Enviar">
-	</form>
+	<!-- Campo do formulário para mensagem com rótulo associado e caixa de texto -->
+	<label for="mensagem">Mensagem:</label><br>
+	<textarea id="mensagem" name="mensagem" rows="5" cols="30"></textarea><br>
+
+	<!-- Botão de envio do formulário -->
+	<input type="submit" value="Enviar">
+</form>
+<!-- Fim do formulário -->
 </body>
 </html>
+<!-- Fim do documento HTML -->
