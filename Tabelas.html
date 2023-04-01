@@ -4,6 +4,7 @@
 	<title>Tabelas - Animais</title>
 	<meta charset="UTF-8">
 	<style>
+		/* Estilo das tabelas */
 		table {
 			border-collapse: collapse;
 			margin-bottom: 20px;
@@ -11,136 +12,141 @@
 			text-align: center;
 		}
 
-		table th {
-			background-color: #FFC107;
-			color: #FFFFFF;
-			font-size: 20px;
-			padding: 10px;
-		}
+	/* Estilo do cabeçalho das tabelas */
+	table th {
+		background-color: #FFC107;
+		color: #FFFFFF;
+		font-size: 20px;
+		padding: 10px;
+	}
 
-		table td {
-			padding: 10px;
-			border: 1px solid #CCC;
-		}
+	/* Estilo das células das tabelas */
+	table td {
+		padding: 10px;
+		border: 1px solid #CCC;
+	}
 
-		table.alt th {
-			background-color: #3F51B5;
-			color: #FFFFFF;
-			font-size: 20px;
-			padding: 10px;
-		}
+	/* Estilo do cabeçalho da tabela alternativa */
+	table.alt th {
+		background-color: #3F51B5;
+		color: #FFFFFF;
+		font-size: 20px;
+		padding: 10px;
+	}
 
-		table.alt td {
-			padding: 10px;
-			border: 2px solid #3F51B5;
-		}
+	/* Estilo das células da tabela alternativa */
+	table.alt td {
+		padding: 10px;
+		border: 2px solid #3F51B5;
+	}
 
-		table.striped tbody tr:nth-child(even) {
-			background-color: #F5F5F5;
-		}
-	</style>
+	/* Estilo das linhas listradas da tabela listrada */
+	table.striped tbody tr:nth-child(even) {
+		background-color: #F5F5F5;
+	}
+</style>
 </head>
 <body>
 	<h1>Tabelas - Animais</h1>
+css
+Copy code
+<h2>Tabela 1 - Espécies de animais</h2>
+<table>
+	<thead>
+		<tr>
+			<th>Nome Popular</th>
+			<th>Nome Científico</th>
+			<th>Classe</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Gato</td>
+			<td>Felis catus</td>
+			<td>Mamíferos</td>
+		</tr>
+		<tr>
+			<td>Cão</td>
+			<td>Canis lupus familiaris</td>
+			<td>Mamíferos</td>
+		</tr>
+		<tr>
+			<td>Papagaio</td>
+			<td>Psittacidae</td>
+			<td>Aves</td>
+		</tr>
+	</tbody>
+</table>
 
-	<h2>Tabela 1 - Espécies de animais</h2>
-	<table>
-		<thead>
-			<tr>
-				<th>Nome Popular</th>
-				<th>Nome Científico</th>
-				<th>Classe</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Gato</td>
-				<td>Felis catus</td>
-				<td>Mamíferos</td>
-			</tr>
-			<tr>
-				<td>Cão</td>
-				<td>Canis lupus familiaris</td>
-				<td>Mamíferos</td>
-			</tr>
-			<tr>
-				<td>Papagaio</td>
-				<td>Psittacidae</td>
-				<td>Aves</td>
-			</tr>
-		</tbody>
-	</table>
+<h2>Tabela 2 - Animais em risco de extinção</h2>
+<table class="alt">
+	<thead>
+		<tr>
+			<th>Nome Popular</th>
+			<th>Status</th>
+			<th>Localização</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Panda Gigante</td>
+			<td>Em perigo</td>
+			<td>China</td>
+		</tr>
+		<tr>
+			<td>Rinoceronte Branco do Norte</td>
+			<td>Extinto na natureza</td>
+			<td>África</td>
+		</tr>
+		<tr>
+			<td>Tartaruga de Casco Mole</td>
+			<td>Em perigo crítico</td>
+			<td>América do Norte</td>
+		</tr>
+	</tbody>
+</table>
 
-	<h2>Tabela 2 - Animais em risco de extinção</h2>
-	<table class="alt">
-		<thead>
-			<tr>
-				<th>Nome Popular</th>
-				<th>Status</th>
-				<th>Localização</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Panda Gigante</td>
-				<td>Em perigo</td>
-				<td>China</td>
-			</tr>
-			<tr>
-				<td>Rinoceronte Branco do Norte</td>
-				<td>Extinto na natureza</td>
-				<td>África</td>
-			</tr>
-			<tr>
-				<td>Tartaruga de Casco Mole</td>
-				<td>Em perigo crítico</td>
-				<td>América do Norte</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<h2>Tabela 3 - Classificação dos animais</h2>
-	<table class="striped">
-		<thead>
-			<tr>
-				<th>Reino</th>
-				<th>Filo
-				<th>Classe</th>
-				<th>Ordem</th>
-				<th>Família</th>
-				<th>Gênero</th>
-				<th>Espécie</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Animalia</td>
-				<td>Chordata</td>
-				<td>Mammalia</td>
-				<td>Carnivora</td>
-				<td>Felidae</td>
-				<td>Felis</td>
-				<td>Felis catus</td>
-			</tr>
-			<tr>
-				<td>Animalia</td>
-				<td>Chordata</td>
-				<td>Aves</td>
-				<td>Psittaciformes</td>
-				<td>Psittacidae</td>
-				<td>Amazona</td>
-				<td>Amazona aestiva</td>
-			</tr>
-			<tr>
-				<td>Animalia</td>
-				<td>Chordata</td>
-				<td>Reptilia</td>
-				<td>Testudines</td>
-				<td>Cheloniidae</td>
-				<td>Chelonia</td>
-				<td>Chelonia mydas</td>
-			</tr>
-		</tbody>
-	</table>
+<h2>Tabela 3 - Classificação dos animais</h2>
+<table class="striped">
+	<thead>
+		<tr>
+<th>Filo</th> <!-- Tag para o nome do Filo -->
+	<th>Classe</th> <!-- Tag para o nome da Classe -->
+	<th>Ordem</th> <!-- Tag para o nome da Ordem -->
+	<th>Família</th> <!-- Tag para o nome da Família -->
+	<th>Gênero</th> <!-- Tag para o nome do Gênero -->
+	<th>Espécie</th> <!-- Tag para o nome da Espécie -->
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Animalia</td> <!-- Tag para o Reino Animalia -->
+		<td>Chordata</td> <!-- Tag para o Filo Chordata -->
+		<td>Mammalia</td> <!-- Tag para a Classe Mammalia -->
+		<td>Carnivora</td> <!-- Tag para a Ordem Carnivora -->
+		<td>Felidae</td> <!-- Tag para a Família Felidae -->
+		<td>Felis</td> <!-- Tag para o Gênero Felis -->
+		<td>Felis catus</td> <!-- Tag para a Espécie Felis catus -->
+	</tr>
+	<tr>
+		<td>Animalia</td> <!-- Tag para o Reino Animalia -->
+		<td>Chordata</td> <!-- Tag para o Filo Chordata -->
+		<td>Aves</td> <!-- Tag para a Classe Aves -->
+		<td>Psittaciformes</td> <!-- Tag para a Ordem Psittaciformes -->
+		<td>Psittacidae</td> <!-- Tag para a Família Psittacidae -->
+		<td>Amazona</td> <!-- Tag para o Gênero Amazona -->
+		<td>Amazona aestiva</td> <!-- Tag para a Espécie Amazona aestiva -->
+	</tr>
+	<tr>
+		<td>Animalia</td> <!-- Tag para o Reino Animalia -->
+		<td>Chordata</td> <!-- Tag para o Filo Chordata -->
+		<td>Reptilia</td> <!-- Tag para a Classe Reptilia -->
+		<td>Testudines</td> <!-- Tag para a Ordem Testudines -->
+		<td>Cheloniidae</td> <!-- Tag para a Família Cheloniidae -->
+		<td>Chelonia</td> <!-- Tag para o Gênero Chelonia -->
+		<td>Chelonia mydas</td> <!-- Tag para a Espécie Chelonia mydas -->
+	</tr>
+</tbody>
+</table>
 </body>
 </html>
