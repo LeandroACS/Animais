@@ -1,1 +1,55 @@
 
+/* Estilo do cabeçalho */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* Estilo do título das tabelas */
+h2 {
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* Estilo das tabelas */
+table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Estilo do cabeçalho das tabelas */
+table th {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* Estilo das células das tabelas */
+table td {
+  padding: 10px;
+  border: 1px solid #CCC;
+}
+
+/* Estilo do cabeçalho da tabela alternativa */
+table.alt th {
+  background-color: #3F51B5;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* Estilo das células da tabela alternativa */
+table.alt td {
+  padding: 10px;
+  border: 2px solid #3F51B5;
+}
+
+/* Estilo das linhas listradas da tabela listrada */
+table.striped tbody tr:nth-child(even) {
+  background-color: #F5F5F5;
+}
