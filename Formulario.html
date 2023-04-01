@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animais - Formulário</title>
+</head>
+<body>
+	<h1>Animais - Formulário</h1>
+	<form action="/submit-form.php" method="post">
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" required><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br>
+
+		<label for="animais">Selecione um animal:</label>
+		<select id="animais" name="animais">
+			<option value="cachorro">Cachorro</option>
+			<option value="gato">Gato</option>
+			<option value="tartaruga">Tartaruga</option>
+			<option value="papagaio">Papagaio</option>
+			<option value="girafa">Girafa</option>
+			<option value="tigre">Tigre</option>
+		</select><br>
+
+		<label for="pergunta">Qual é o seu animal favorito?</label>
+		<input type="radio" id="cachorro" name="pergunta" value="cachorro">
+		<label for="cachorro">Cachorro</label>
+		<input type="radio" id="gato" name="pergunta" value="gato">
+		<label for="gato">Gato</label>
+		<input type="radio" id="outro" name="pergunta" value="outro">
+		<label for="outro">Outro</label><br>
+
+		<label for="mensagem">Mensagem:</label><br>
+		<textarea id="mensagem" name="mensagem" rows="5" cols="30"></textarea><br>
+
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
